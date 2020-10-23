@@ -1,0 +1,34 @@
+import { Override, Data, Color } from "framer"
+
+export function Tombolnyala(): Override {
+    return {
+        onTap: () => {
+            fetch(
+                "https://maker.ifttt.com/trigger/nyala_lampu/with/key/dAn5zxdeMoaP25aNI74f-mq0W282bUtSBvzGCkgwaRN",
+                { method: "post" }
+            )
+        },
+    }
+}
+
+export function Tombolmati(): Override {
+    return {
+        onTap: () => {
+            fetch(
+                "https://maker.ifttt.com/trigger/matikan_lampu/with/key/dAn5zxdeMoaP25aNI74f-mq0W282bUtSBvzGCkgwaRN",
+                { method: "post" }
+            )
+        },
+    }
+}
+
+export function Lampukuning(): Override {
+    return {
+        onTap: () => {
+            fetch(
+                "https://maker.ifttt.com/trigger/Kuning_nyala/with/key/dAn5zxdeMoaP25aNI74f-mq0W282bUtSBvzGCkgwaRN",
+                { method: "post" }
+            )
+        },
+    }
+}
